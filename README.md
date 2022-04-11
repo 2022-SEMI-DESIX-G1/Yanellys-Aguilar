@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yanee-m&label=Profile%20views&color=0e75b6&style=flat" alt="yanee-m" /> </p>
 
-<p align="left"> <a href="https://twitter.com/yanee_m" target="blank"><img src="https://img.shields.io/twitter/follow/yanee_m?logo=twitter&style=for-the-badge" alt="yanee_m" /></a> </p>
-
 - 🔭 I’m currently working on **S.D.XI Class**
 
 <h3 align="left">Connect with me:</h3>
