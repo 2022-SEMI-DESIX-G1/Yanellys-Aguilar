@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2 - Problemas Básicos con Javascript</title>
+</head>
+<body>
+    <h1>Laboratorio #2</h1>
+    <h2>¿Qué es Javascript y en qué se asemeja a Java?</h2>
+    <p>Java y Javascript son lenguajes distintos, 
+        comparten parte de su nombre y la base de su sintaxis, 
+        sin embargo sus diferencias son notables.</p>
+        <p>Javascript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. 
+        Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
+        Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web 
+        permitiendo mejoras en la interfaz de usuario y páginas web dinámicas y JavaScript del lado del servidor 
+        (Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, 
+        por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo. </p> 
+        <h3>Diferencias entre Ambos</h3> 
+        <ul>
+            <li>NO es lo mismo que Java.
+            <li>JavaScript NO es un subconjunto de Java.</li>
+            <li>JavaScript NO es una versión de Java para programar páginas web.</li>
+            <li>JavaScript NO comparte prácticamente nada con Java. Si acaso la misma sintaxis que comparte con otros lenguajes como C, C++ o C#, 
+            y algún detalle más como algunos nombres de clases (Math o Date, por ejemplo), pero nada más.</li>
+            <li>JavaScript NO es más fácil que Java. De hecho en algunas áreas concretas es más difícil de dominar.</li>
+            <li>JavaScript NO es solo un lenguaje para páginas web, al igual que Java no es un lenguaje solo para servidor.</li>
+        </ul> 
+    
+    </p>
+    <br>
+    <p id="prob1"></p>
+    <p id="prob1-1"></p>
+    <p id="prob1-2"></p>
+    <p id="prob1-3"></p>
+    <p id="prob1-4"></p>
+    <br>
+    <p id="prob2"></p>
+    <br>
+    <p id="prob3"></p>
+    <br>
+    <p id="prob4"></p>
+<script>
+        //1. Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", "Resta", "Multiplicación" y "División" 
+//en la consola. Las variables pueden ser estáticas.
+
+//Variables
+var num1 = 18;
+var num2 = 11;
+
+document.getElementById("prob1").innerHTML = "<b>Problema 1</b> <br>Variable #1:  "+ num1 + "<br>Variable #2: " + num2;
+//Suma
+document.getElementById("prob1-1").innerHTML = "La Suma de las Variables es Igual a: " + (num1 + num2);
+//Resta
+document.getElementById("prob1-2").innerHTML = "La Resta de las Variables es Igual a: " + (num1 - num2);
+//Multiplicación
+document.getElementById("prob1-3").innerHTML = "La Multiplicación de las Variables es Igual a: " + (num1 * num2);
+//División
+document.getElementById("prob1-4").innerHTML = "La División de las Variables es Igual a: " + (num1 / num2);
+
+//2. Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas.
+
+//Variables
+let fname = "Yanellys Milagro "
+let lname = "Aguilar Onodera"
+
+//Concatenación
+document.getElementById("prob2").innerHTML = "<b>Problema 2</b> <br>" + fname + lname;
+
+//3. Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable.
+const word = "Puppy";
+const amount = 5;
+document.getElementById("prob3").innerHTML = "<b>Problema 3</b>" + "<br>Tipo de variable Word: " + (typeof word) + "<br>Tipo de variable Amount: " + (typeof amount);
+
+
+//4. Declarar una variable tipo Objecto, colocar 4 llaves dentro de él que contengan un entero, 
+//un string, un booleano y un objeto vacío, en ese mismo orden.
+let object = {
+    key1: 18,       
+    key2: "Puppy",
+    key3: true,
+    key4: {},
+}
+
+document.getElementById("prob4").innerHTML = "<b>Problema 4</b>" 
++ "<br>Llave1 valor: "+ (typeof object.key1)
+
++ "<br>Llave2 valor: "+ (typeof object.key2)
+
++ "<br>Llave3 valor: "+ (typeof object.key3)  
+
++ "<br>Llave4 valor: "+ (typeof object.key4);
+
+</script>
+</body>
+</html>
